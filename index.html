@@ -42,67 +42,68 @@
         </p>
 
 
-        <form>
+        <form class="col-md-8">
             <div class="form-group row">
-                <label for="FirstName" class="col-4 col-form-label">First Name</label>
+                <label for="FirstName" class="col-4 col-form-label text-right">First Name</label>
                 <div class="col-8">
                     <input id="FirstName" name="FirstName" type="text" required="required" class="form-control here">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="LastName" class="col-4 col-form-label">Last Name</label>
+                <label for="LastName" class="col-4 col-form-label text-right">Last Name</label>
                 <div class="col-8">
                     <input id="LastName" name="LastName" type="text" class="form-control here" required="required">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="PhoneNumber" class="col-4 col-form-label">Phone Number</label>
+                <label for="PhoneNumber" class="col-4 col-form-label text-right">Phone Number</label>
                 <div class="col-8">
                     <input id="PhoneNumber" name="PhoneNumber" type="text" class="form-control here">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="StreetAddress" class="col-4 col-form-label">Street Address</label>
+                <label for="StreetAddress" class="col-4 col-form-label text-right">Street Address</label>
                 <div class="col-8">
                     <input id="StreetAddress" name="StreetAddress" type="text" class="form-control here">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="City" class="col-4 col-form-label">City</label>
+                <label for="City" class="col-4 col-form-label text-right">City</label>
                 <div class="col-8">
                     <input id="City" name="City" type="text" class="form-control here">
                 </div>
             </div>
             <div class="form-group row">
-                <label for="ZipCode" class="col-4 col-form-label">Zip Code</label>
+                <label for="ZipCode" class="col-4 col-form-label text-right">Zip Code</label>
                 <div class="col-8">
                     <input id="ZipCode" name="ZipCode" type="text" class="form-control here">
                 </div>
             </div>
+
+
             <div class="form-group row">
                 <div class="col-4"></div>
-                <div class="col-8">
-                    <label class="custom-control custom-radio">
-                        <input name="Ride" type="radio" required="required" class="custom-control-input" value="Need">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">I need a ride to the polls</span>
-                    </label>
-                    <label class="custom-control custom-radio">
-                        <input name="Ride" type="radio" required="required" class="custom-control-input"
-                               value="Provide">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">I can provide a ride to the polls</span>
-                    </label>
-                    <label class="custom-control custom-radio">
-                        <input name="Ride" type="radio" required="required" class="custom-control-input" value="Other">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description">I can help in other ways</span>
-                    </label>
+                <div class="col-8 text-left">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-secondary active">
+                            <input type="radio" name="Ride" id="ride" value="ride" required="required"
+                                   autocomplete="off" checked> I need a ride to the polls
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="Ride" id="provide" value="ride" required="required"
+                                   autocomplete="off"> I can provide a ride to the polls
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="Ride" id="other" value="ride" required="required"
+                                   autocomplete="off"> I can help in other ways
+                        </label>
+                    </div>
                 </div>
             </div>
             <div class="form-group row">
                 <div class="offset-4 col-8">
                     <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                    <button name="reset" class="btn btn-danger" type="reset">Reset Form</button>
                 </div>
             </div>
         </form>
