@@ -8,9 +8,14 @@
     <link rel="stylesheet" type="text/css" href="./styles.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117703714-1"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-117703714-1');
@@ -35,6 +40,74 @@
             Please stay tuned while we build out this platform. We are hoping to have this ready for you before the 2018
             elections. We greatly appreciate your patience
         </p>
+
+
+        <form>
+            <div class="form-group row">
+                <label for="FirstName" class="col-4 col-form-label">First Name</label>
+                <div class="col-8">
+                    <input id="FirstName" name="FirstName" type="text" required="required" class="form-control here">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="LastName" class="col-4 col-form-label">Last Name</label>
+                <div class="col-8">
+                    <input id="LastName" name="LastName" type="text" class="form-control here" required="required">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="PhoneNumber" class="col-4 col-form-label">Phone Number</label>
+                <div class="col-8">
+                    <input id="PhoneNumber" name="PhoneNumber" type="text" class="form-control here">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="StreetAddress" class="col-4 col-form-label">Street Address</label>
+                <div class="col-8">
+                    <input id="StreetAddress" name="StreetAddress" type="text" class="form-control here">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="City" class="col-4 col-form-label">City</label>
+                <div class="col-8">
+                    <input id="City" name="City" type="text" class="form-control here">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ZipCode" class="col-4 col-form-label">Zip Code</label>
+                <div class="col-8">
+                    <input id="ZipCode" name="ZipCode" type="text" class="form-control here">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-4"></div>
+                <div class="col-8">
+                    <label class="custom-control custom-radio">
+                        <input name="Ride" type="radio" required="required" class="custom-control-input" value="Need">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">I need a ride to the polls</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input name="Ride" type="radio" required="required" class="custom-control-input"
+                               value="Provide">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">I can provide a ride to the polls</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input name="Ride" type="radio" required="required" class="custom-control-input" value="Other">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">I can help in other ways</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-4 col-8">
+                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+
+
     </div>
     <div class="col-md-2"></div>
 </div>
